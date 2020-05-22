@@ -1,0 +1,28 @@
+<h1>Users</h1>
+
+<%= link_to 'New User', new_user_path %>
+
+<% if @users.any? %>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.name %></td>
+        <td><%= user.email %></td>
+        <td><%= link_to 'Show', user %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<% else %>
+  <p>There are no users to display.</p>
+<% end %>
+
+<%= paginate @users %>
