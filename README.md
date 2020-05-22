@@ -1,24 +1,7 @@
-# README
+# Rails Playground
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A playground app to try out some things wit Rails, like WebAuthn, TOTP, Action Text, and file uploading.
 
-Things you may want to cover:
+## License
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+MIT license, do whatever you want with this playground code.
