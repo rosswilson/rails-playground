@@ -1,6 +1,6 @@
 # Rails Playground
 
-A playground app to try out some things wit Rails, like WebAuthn, TOTP, Action Text, and file uploading.
+A playground app to try out some things with Rails, such as TOTP, Action Text, and file uploading.
 
 ## License
 
