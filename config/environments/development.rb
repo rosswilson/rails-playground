@@ -62,4 +62,9 @@ Rails.application.configure do
 
   # Make local development user creation faster
   BCrypt::Engine.cost = 4
+
+  # Configure ActionMailer to construct email URLs with the correct host
+  config.action_mailer.default_url_options = {
+    host: "localhost"
+  }
 end
