@@ -112,6 +112,7 @@ Rails.application.configure do
 
   # Configure ActionMailer to construct email URLs with the correct host
   config.action_mailer.default_url_options = {
-    host: "example.com"
+    host: "example.com",
+    protocol: "https"
   }
 end

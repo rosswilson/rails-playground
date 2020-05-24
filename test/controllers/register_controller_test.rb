@@ -13,4 +13,10 @@ class RegisterControllerTest < ActionDispatch::IntegrationTest
 
     assert_redirected_to root_url
   end
+
+  test "should send a welcome email" do
+    assert_emails 1 do
+      post register_url, params: { user: { name: "New User", email: "new-user@example.com", password: "password" } }
+    end
+  end
 end

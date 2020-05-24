@@ -65,6 +65,7 @@ Rails.application.configure do
 
   # Configure ActionMailer to construct email URLs with the correct host
   config.action_mailer.default_url_options = {
-    host: "localhost"
+    host: "localhost",
+    port: 3000
   }
 end
