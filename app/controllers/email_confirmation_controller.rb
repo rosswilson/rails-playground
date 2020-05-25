@@ -1,4 +1,6 @@
 class EmailConfirmationController < ApplicationController
+  skip_before_action :require_current_user
+
   def create
     user = User.find_by_email_confirm_token(params[:id])
 

@@ -3,6 +3,8 @@ require "application_system_test_case"
 class UsersTest < ApplicationSystemTestCase
   setup do
     @user = create(:user)
+
+    sign_in_as(@user)
   end
 
   test "visiting the index" do
@@ -42,7 +44,7 @@ class UsersTest < ApplicationSystemTestCase
     click_on "Back"
   end
 
-  test "destroying a user" do
+  test "destroying the current user" do
     visit users_url
 
     click_on "Show", match: :first
@@ -51,6 +53,6 @@ class UsersTest < ApplicationSystemTestCase
       click_on "Destroy", match: :first
     end
 
-    assert_text "User was successfully destroyed"
+    assert_text "Sign In"
   end
 end

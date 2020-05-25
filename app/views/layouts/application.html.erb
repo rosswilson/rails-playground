@@ -10,6 +10,15 @@
   </head>
 
   <body>
+    <% if current_user %>
+      <p>
+        <%= link_to "Dashboard", root_url %> |
+        <%= link_to "Users", users_url %> |
+        <%= link_to current_user.name, current_user %> |
+        <%= link_to "Sign Out", signout_path, method: :delete %>
+      </p>
+    <% end %>
+
     <% flash.each do |key, msg| %>
       <%= content_tag :div, msg, id: key %>
     <% end %>
