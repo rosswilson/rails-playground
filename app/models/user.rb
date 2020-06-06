@@ -6,6 +6,8 @@ class User < ApplicationRecord
 
   has_secure_password
 
+  has_rich_text :content
+
   def email_activate
     self.email_confirmed_at = DateTime.now
     self.email_confirm_token = nil
