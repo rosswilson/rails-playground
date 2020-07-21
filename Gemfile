@@ -45,7 +45,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 
   # A library for setting up Ruby objects as test data
-  gem "factory_bot_rails", "~> 6.0"
+  gem "factory_bot_rails", "~> 6.1"
 end
 
 group :development do
