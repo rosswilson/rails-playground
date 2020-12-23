@@ -1,5 +1,7 @@
 {
   "name": "playground",
+  "description": "Static assets for the Rails Playground service",
+  "license": "MIT",
   "private": true,
   "dependencies": {
     "@rails/actioncable": "^6.1.0",
