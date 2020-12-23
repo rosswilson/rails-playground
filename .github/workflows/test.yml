@@ -60,6 +60,9 @@ jobs:
       - name: Install npm packages
         run: yarn install --frozen-lockfile
 
+      - name: Compile Static Assets
+        run: ./bin/rails webpacker:compile
+
       - name: Run tests
         run: ./bin/rails test
 
