@@ -65,4 +65,8 @@ Rails.application.configure do
   config.action_mailer.default_url_options = {
     host: "example.com"
   }
+
+  # Run debug logging whilst debugging a GitHub CI flaky test issue
+  config.log_level = :debug
+  config.logger = Logger.new(STDOUT)
 end
