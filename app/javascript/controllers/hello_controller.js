@@ -4,7 +4,7 @@
 // This example controller works with specially annotated HTML like:
 //
 // <div data-controller="hello">
-//   <h1 data-target="hello.output"></h1>
+//   <h1 data-hello-target="output"></h1>
 // </div>
 
 import { Controller } from "stimulus";
